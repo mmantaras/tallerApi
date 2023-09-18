@@ -1,8 +1,25 @@
 #style {
-    margin:10px;
+    margin: 10px;
     width: 225px;
- }
-
+    color: white;
+    border-radius: 15px;
+    display: flex; /* Aplica 'display: flex;' al contenedor */
+    flex-direction: column;
+    margin-bottom: 30px;
+    /* Otros estilos que desees aplicar */
+  }
+  
+  #style a {
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #32414f;
+    /* Estilos adicionales para la etiqueta 'a' */
+    margin-top: auto; /* Coloca el botón al final del div */
+    text-align: center; 
+    text-decoration: none;
+  }
+  
 
   
  body {
@@ -13,7 +30,12 @@
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+    background-image: url('imagen/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg'); 
+    background-size: cover; /* Escala la imagen de fondo para cubrir todo el área del cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo en su posición */
 }
+  
 #container {
     
     display: flex;
@@ -34,9 +56,14 @@ img {
 
 #subtitulo {
     font-size: 25px;
+    color: white;
  }
-h1{
+ #titulo{
     font-size: 50px;
+    background-color: #32414f82;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
  }
  #subtNombre {
     border-radius: 5px;

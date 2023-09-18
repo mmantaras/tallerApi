@@ -10,10 +10,21 @@ let BtnPrevious;
 // Establecer una cookie con SameSite=Lax y Secure
 document.cookie = "miCookie=miValor; SameSite=Lax; Secure";
 
+function cambiarFondoDespuesDeBusqueda() {
+  const body = document.body;
+  body.style.backgroundImage = 'none'; 
+  body.style.backgroundColor = '#32414f'; 
+}
+  
+
 obtenerInfo.addEventListener("click", () => {
-    
+  
     if (animeTitulo.value === "") {
-      alert("Por favor, complete el campo de búsqueda.");
+      animeContainer.innerHTML = ``
+      subtitulo.innerHTML = ``
+      paginationContainer.innerHTML = ``
+      const body = document.body;
+      body.style.backgroundImage = 'url("imagen/dex-ezekiel-IxDPZ-AHfoI-unsplash.jpg")';
       return;
     } else {
         
@@ -35,6 +46,8 @@ async function getResponse(anime) {
 }
 
 async function getAnimesList(page) {
+
+  cambiarFondoDespuesDeBusqueda();
 
   animeContainer.innerHTML = ``
         subtitulo.innerHTML = ``
