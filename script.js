@@ -1,11 +1,9 @@
 let animeTitulo = document.getElementById("animeTitulo");
 const obtenerInfo = document.getElementById("obtenerInfo");
-const resultadosInfoAnime = document.getElementById("resultadosInfoAnime");
 const animeContainer = document.getElementById("container");
 const subtitulo = document.getElementById("subtitulo")
 const paginationContainer = document.getElementById("pagination"); // Contenedor de paginación
-let BtnNext;
-let BtnPrevious;
+
 
 // Establecer una cookie con SameSite=Lax y Secure
 document.cookie = "miCookie=miValor; SameSite=Lax; Secure";
@@ -60,7 +58,6 @@ async function getAnimesList(page) {
   const anime = `https://api.jikan.moe/v4/anime?q=${animeTitle}&page=${page}&limit=10`;
   const response = await getResponse(anime);
   console.log(response)
-  //let animeID = animeName.sort((a, b) => a.mal_id - b.mal_id)[0].mal_id;
 
   subtitulo.innerHTML += `<p>Resultado de su búsqueda: <strong>${animeTitle}</strong></p>`
 

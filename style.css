@@ -14,13 +14,15 @@
     padding: 5px 15px;
     border-radius: 5px;
     color: #32414f;
-    /* Estilos adicionales para la etiqueta 'a' */
     margin-top: auto; /* Coloca el botón al final del div */
     text-align: center; 
     text-decoration: none;
   }
   
-
+  #style a:hover {
+    background-color: rgba(165, 165, 165, 0.86); /* Color de fondo al pasar el ratón */
+    color: white;
+}
   
  body {
     margin: 0;
